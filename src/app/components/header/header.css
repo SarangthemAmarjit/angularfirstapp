@@ -1,10 +1,36 @@
-header {
-    display: flex;
-    padding-inline: 25px;
+header nav {
+  display: flex;              /* make nav a flexbox */
+  justify-content: space-between; /* push title left, menu right */
+  align-items: center;        /* center vertically */
+  padding-right: 50px;
+  padding-left: 30px;
+  background: #1e4101;
+      /* optional */
+}
 
-    padding-block: 16px;
-    background-color: #001325;
-    color: #efe8e8;
-    align-items: center;
-    justify-content: space-between;
+header nav ul {
+  list-style: none;
+  display: flex;              /* make nav items horizontal */
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+ ul li {
+        /* add spacing so hover feels bigger */
+  cursor: pointer;           /* show pointer */
+}
+
+ul li:hover {
+  background-color: rgb(3, 2, 95);   /* hover effect */
+}
+
+header nav ul li a {
+    display: block;          /* makes link fill the li */
+  padding: 10px 15px; 
+  text-decoration: none;
+  color: wheat;
+}
+
+h3{
+  color: white;
 }
