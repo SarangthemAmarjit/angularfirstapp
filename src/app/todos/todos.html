@@ -1,16 +1,17 @@
 <h3>ToDos List</h3>
 
-<ul class="todo-list">
-@for (item of todoitemsdata(); track item.id) {
-    <li class="todo-item">
-    <input  id="todo_{{item.id}}" type="checkbox" [value]="item.completed"   />
-    <label for="">{{item.title}}</label>
-
-    </li>
-
+@if(!todoitemsdata().length){
+<p>Loading...</p>
 }
+
+<form>
+    <label>Filter Todos</label>
+    <input name="filtertext" [(ngModel)]="filtertext" type="text" placeholder="search todos..">
+</form>
+
+<ul class="todo-list">
+    @for (item of todoitemsdata() | filterTodos: filtertext(); track item.id) {
+   <app-todo-item (todoToggle)="updatetodoitem(item)" [todo]="item"></app-todo-item>
+
+    }
 </ul>
-
-
-
-
