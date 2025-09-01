@@ -5,3 +5,39 @@ ul {
 label {
     margin-right: 10px;
 }
+
+.loading-center {
+    height: 85vh;
+    /* full screen height */
+    width: 100vw;
+    /* full screen height */
+    display: flex;
+    flex-direction: column;
+    /* stack loader + text */
+    justify-content: center;
+    /* vertical center */
+    align-items: center;
+    /* horizontal center */
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    /* Light grey */
+    border-top: 8px solid #37db34;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

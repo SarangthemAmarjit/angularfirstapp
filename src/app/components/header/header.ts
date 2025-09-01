@@ -1,13 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink],
+  standalone: true,                  // 👈 required for standalone
+  imports: [RouterModule,RouterLink],           // 👈 RouterModule includes RouterLink + RouterLinkActive
   templateUrl: './header.html',
-  styleUrl: './header.css'
+  styleUrls: ['./header.css']        // 👈 must be plural
 })
 export class Header {
   title = signal('MY FIRST ANGULAR APP');
-
 }

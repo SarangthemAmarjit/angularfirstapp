@@ -1,8 +1,11 @@
+@if(!todoitemsdata().length){
+<div class="loading-center">
+    <div class="loader"></div>
+    <p>Fetching Data...</p>
+</div>
+}@else{
 <h3>ToDos List</h3>
 
-@if(!todoitemsdata().length){
-<p>Loading...</p>
-}
 
 <form>
     <label>Filter Todos</label>
@@ -11,7 +14,8 @@
 
 <ul class="todo-list">
     @for (item of todoitemsdata() | filterTodos: filtertext(); track item.id) {
-   <app-todo-item (todoToggle)="updatetodoitem(item)" [todo]="item"></app-todo-item>
+    <app-todo-item (todoToggle)="updatetodoitem(item)" [todo]="item"></app-todo-item>
 
     }
 </ul>
+}

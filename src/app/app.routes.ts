@@ -8,5 +8,8 @@ export const routes: Routes = [
 ,
        { path: 'todos',
        loadComponent: () => import('./todos/todos').then(m => m.Todos)
+    },
+      { path: 'contact',
+       loadComponent: () => import('./contactus/contactus').then(m => m.Contactus)
     }
 ];
