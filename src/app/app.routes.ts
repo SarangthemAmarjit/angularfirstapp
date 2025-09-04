@@ -1,15 +1,9 @@
 import { Routes } from '@angular/router';
+import { LandingComponent } from './pages/landingpage/landing';
+import { TodoPageComponent } from './pages/todo';
+
 
 export const routes: Routes = [
-    { path: '',
-       pathMatch:'full',
-       loadComponent: () => import('./home/home').then(m => m.Home)
-    }
-,
-       { path: 'todos',
-       loadComponent: () => import('./todos/todos').then(m => m.Todos)
-    },
-      { path: 'contact',
-       loadComponent: () => import('./contactus/contactus').then(m => m.Contactus)
-    }
+  { path: '', component: LandingComponent },
+  { path: 'todo', component: TodoPageComponent }
 ];

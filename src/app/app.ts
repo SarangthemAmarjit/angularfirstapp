@@ -1,26 +1,33 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { Header } from './components/header/header';
+import { NavbarComponent } from './pages/landingpage/component/navbar';
+import { FooterComponent } from './pages/landingpage/component/footer';
+import { PreloaderComponent } from './pages/landingpage/component/preloader';
+import { ScrollTopComponent } from './pages/landingpage/component/scrolltop';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, RouterModule  // 👈 make sure RouterModule is imported
+  standalone: true,
+  imports: [
+    RouterModule,
+    RouterOutlet,
+    NavbarComponent,
+    FooterComponent,
+    PreloaderComponent,
+    ScrollTopComponent
   ],
   template: `
-   <app-header/>
-   <main>
+    <app-preloader />
+    <app-navbar />
     <router-outlet />
-   </main>
-  
-
-
-  
+    <app-footer />
+    <app-scroll-top />
   `,
-  styles: [
-    'main { padding:16px; display: flex; }'
-  ],
+  styles: [`
+    :host {
+      display: block;
+    }
+  `]
 })
-export class App {
-  protected readonly title = signal('first-ng-app');
-}
+export class App {}

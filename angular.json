@@ -7,7 +7,6 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-      
         }
       },
       "root": "",
@@ -26,9 +25,19 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
             "styles": [
+              "src/assets/css/bootstrap-5.0.0-beta2.min.css",
+              "src/assets/css/LineIcons.2.0.css",
+              "src/assets/css/tiny-slider.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/main.css",
               "src/styles.css"
             ]
           },
@@ -86,7 +95,11 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           }
         }
