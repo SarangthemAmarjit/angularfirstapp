@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { LandingComponent } from './pages/landingpage/landing';
-import { TodoPageComponent } from './pages/todo';
+import { TodoPageComponent } from './pages/todo/todo';
 
 
 export const routes: Routes = [

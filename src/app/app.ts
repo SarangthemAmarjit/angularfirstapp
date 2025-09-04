@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './pages/landingpage/component/navbar';
 import { FooterComponent } from './pages/landingpage/component/footer';
+import { NavbarComponent } from './pages/landingpage/component/header/header';
 import { PreloaderComponent } from './pages/landingpage/component/preloader';
 import { ScrollTopComponent } from './pages/landingpage/component/scrolltop';
 

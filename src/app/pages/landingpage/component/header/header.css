@@ -1,0 +1,33 @@
+.header-btn .main-btn:hover {
+  background: #3a5ae0;
+}
+
+.header-btn .main-btn {
+  padding: 10px 25px;
+  background: #4a6cf7;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+
+
+
+.buttonlabel{
+  padding: 10px 13px;
+  align-items: center;
+  align-content: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgb(255, 243, 240);
+  transition: all 0.3s ease-in-out; /* smooth animation */
+  cursor: pointer;
+}
+
+.buttonlabel:hover{
+   font-weight: 500;
+  color: rgb(245, 168, 95);
+  border: 1px solid rgba(1, 70, 1, 0.5); /* border animates in */
+ 
+}

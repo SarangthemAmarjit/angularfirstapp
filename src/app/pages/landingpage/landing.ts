@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { HeroSectionComponent } from './component/hero';
-import { AboutSectionComponent } from './component/aboutsection';
+import { AboutSectionComponent } from './component/aboutsection/aboutsection';
 import { CtaSectionComponent } from './component/ctasection';
 import { FeatureSectionComponent } from './component/feature';
+import { HeroSectionComponent } from './component/hero';
 
 
 @Component({

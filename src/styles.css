@@ -73,39 +73,12 @@ body {
   color: #d8e9ac;
 }
 
-.header-btn .main-btn {
-  padding: 10px 25px;
-  background: #4a6cf7;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.todo-container {
-  align-content: center;
-  /* gradient background */
-  background: linear-gradient(to right, #d1fbfa, #d8f8d2);
-  border: 2px solid #1c6001;
-  border-radius: 12px;
-  max-width: 600px;
-  margin: 100px auto;
-  padding: 20px;
-  height: 70vh;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* On hover, lift up slightly */
-.todo-container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
 
 
-.header-btn .main-btn:hover {
-  background: #3a5ae0;
-}
+
+
+
+
 
 /* Hero Section Styles */
 .hero-section {
@@ -329,6 +302,10 @@ body {
 
 .footer-widget input::placeholder {
   color: #aaa;
+}
+
+.navbar-nav ms-auto button{
+  padding: 40px;
 }
 
 .footer-widget button {
