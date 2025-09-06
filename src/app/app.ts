@@ -4,6 +4,9 @@ import { FooterComponent } from './pages/landingpage/component/footer';
 import { NavbarComponent } from './pages/landingpage/component/header/header';
 import { PreloaderComponent } from './pages/landingpage/component/preloader';
 import { ScrollTopComponent } from './pages/landingpage/component/scrolltop';
+import {CarouselModule } from "ngx-acuw";
+
+
 
 
 @Component({
@@ -15,8 +18,11 @@ import { ScrollTopComponent } from './pages/landingpage/component/scrolltop';
     NavbarComponent,
     FooterComponent,
     PreloaderComponent,
-    ScrollTopComponent
+    ScrollTopComponent,
+    CarouselModule,
+   
   ],
+
   template: `
     <app-preloader />
     <app-navbar />

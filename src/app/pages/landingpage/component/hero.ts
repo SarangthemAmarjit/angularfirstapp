@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Carouselpage } from "../../../carouselcomponent/carouselcomponent";
 
 @Component({
   selector: 'app-hero-section',
@@ -24,15 +25,14 @@ import { Component } from '@angular/core';
 
           <!-- Hero Image -->
           <div class="col-xxl-6 col-xl-6 col-lg-6">
-            <div class="hero-image text-center text-lg-end">
-              <img src="assets/images/hero/hero-image.svg" alt="Hero" />
-            </div>
+          <app-carouselcomponent/>
           </div>
 
         </div>
       </div>
     </section>
   `,
-  styles: [``]
+  styles: [``],
+  imports: [Carouselpage]
 })
 export class HeroSectionComponent {}

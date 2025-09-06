@@ -30,13 +30,13 @@
               style="max-width:500px; padding:10px; border-bottom:1px solid #eee;
                      color:#0d6303ff; display:flex; justify-content:space-between;
                      align-items:center;">
-            {{ i + 1 }}. {{ todo }}
+        <div class="itemlist"> <span>{{ i + 1 }}. {{ todo }}</span>
 
             <button (click)="deleteTask(i)"
               style="padding:5px 10px; border:none; border-radius:5px;
                      background-color:#dc3545; color:#fff; cursor:pointer;">
               Delete
-            </button>
+            </button></div> 
           </li>
         </ul>
       </div>

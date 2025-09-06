@@ -6,11 +6,13 @@
   background: linear-gradient(to right, #d1fbfa, #d8f8d2);
   border: 1px solid #1c6001;
   border-radius: 12px;
-  max-width: 600px;
+  max-width: 500px;
   margin: 100px auto;
- display: flex;
- flex-direction: column;
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* horizontal center */
+  /* vertical center */
   padding: 20px;
   height: 70vh;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -21,4 +23,14 @@
 .todo-container:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.itemlist {
+  display: flex;
+  justify-content: space-between; /* text on left, button on right */
+  align-items: center;             /* vertically center items */
+  width: 400px;                     /* take full parent width */
+  box-sizing: border-box;          /* include padding in width */
+  padding: 5px 0;                  /* spacing between items */
+  border-bottom: 1px solid #dcdcdc; /* optional separator */
 }
